@@ -1,0 +1,5 @@
+name: ReducedDebugInfo
+version: '1.0.0'
+main: winlyps.reducedDebugInfo.ReducedDebugInfo
+api-version: '1.20'
+authors: [ Winlyps ]
