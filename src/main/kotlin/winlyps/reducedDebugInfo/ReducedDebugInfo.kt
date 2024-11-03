@@ -14,6 +14,9 @@ class ReducedDebugInfo : JavaPlugin() {
 
     override fun onDisable() {
         // Plugin shutdown logic
-        logger.info("ReducedDebugInfo plugin has been disabled.")
+        server.worlds.forEach { world ->
+            world.setGameRuleValue("reducedDebugInfo", "false")
+            logger.info("ReducedDebugInfo plugin has been disabled.")
+        }
     }
 }
